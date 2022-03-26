@@ -3,7 +3,7 @@
     "name": "java-class-imports-folding",
     "displayName": "Java Class Imports Folding",
     "description": "Add folding for imports on Java class files",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "repository": {
         "url": "https://github.com/baincd/vscode-java-class-imports-folding"
     },
