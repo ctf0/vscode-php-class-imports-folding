@@ -4,7 +4,7 @@ class DiffFoldingRangeProvider implements vscode.FoldingRangeProvider {
     onDidChangeFoldingRanges?: vscode.Event<void> | undefined;
 
     private readonly importLineRegEx = /^\s*import\s.*$/
-    private readonly whitespaceLineRegEx = /^\s*$/
+    private readonly whitespaceOrCommentLineRegEx = /^\s*(\/\/.*)?$/
 
     
     provideFoldingRanges(document: vscode.TextDocument, context: vscode.FoldingContext, token: vscode.CancellationToken): vscode.ProviderResult<vscode.FoldingRange[]> {
@@ -25,7 +25,7 @@ class DiffFoldingRangeProvider implements vscode.FoldingRangeProvider {
         for (let i = firstImport + 1; i < document.lineCount; i++) {
             if (this.importLineRegEx.test(document.lineAt(i).text)) {
                 lastImport = i;
-            } else if (!this.whitespaceLineRegEx.test(document.lineAt(i).text)) {
+            } else if (!this.whitespaceOrCommentLineRegEx.test(document.lineAt(i).text)) {
                 break;
             }
         }
