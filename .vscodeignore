@@ -9,4 +9,5 @@ src/**
 **/.eslint.js
 **/*.map
 **/*.ts
+package-vsix.sh
 *.gitignored.*
