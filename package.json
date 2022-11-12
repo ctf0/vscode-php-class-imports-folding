@@ -1,9 +1,9 @@
 {
     "publisher": "baincd",
     "name": "java-class-imports-folding",
-    "displayName": "Java Class Imports Folding",
-    "description": "Add folding for imports on Java class files",
-    "version": "1.0.1",
+    "displayName": "Java Class Imports Folding [OBSOLETE]",
+    "description": "Add folding for imports on Java class files (obsolete - see README)",
+    "version": "1.99.0",
     "repository": {
         "url": "https://github.com/baincd/vscode-java-class-imports-folding"
     },
