@@ -1,22 +1,27 @@
 {
-    "publisher": "baincd",
-    "name": "java-class-imports-folding",
-    "displayName": "Java Class Imports Folding [OBSOLETE]",
-    "description": "Add folding for imports on Java class files (obsolete - see README)",
-    "version": "1.99.0",
-    "repository": {
-        "url": "https://github.com/baincd/vscode-java-class-imports-folding"
-    },
+    "name": "php-class-imports-folding",
+    "displayName": "Php Class Imports Folding",
+    "description": "Add folding for imports on php class files",
+    "version": "0.0.1",
+    "repository": "https://github.com/ctf0/vscode-php-class-imports-folding",
+    "publisher": "ctf0",
     "license": "MIT",
     "engines": {
-        "vscode": "^1.23.0"
+        "vscode": "^1.68.0"
     },
     "categories": [
         "Programming Languages"
     ],
     "activationEvents": [
-        "onLanguage:java"
+        "onLanguage:php"
     ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "php"
+            }
+        ]
+    },
     "main": "./out/extension.js",
     "scripts": {
         "vscode:prepublish": "npm run compile",
@@ -25,11 +30,8 @@
         "watch": "tsc -watch -p ./"
     },
     "devDependencies": {
-        "@types/node": "^12.12.0",
-        "@types/vscode": "^1.23.0",
-        "@typescript-eslint/eslint-plugin": "^4.16.0",
-        "@typescript-eslint/parser": "^4.16.0",
-        "eslint": "^7.21.0",
-        "typescript": "^4.2.2"
+        "@types/node": "^18.11.10",
+        "@types/vscode": "^1.68.0",
+        "typescript": "^4.6.3"
     }
 }

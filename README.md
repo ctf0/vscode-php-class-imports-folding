@@ -1,21 +1,8 @@
-# Java Class Imports Folding [OBSOLETE]
+# Php Class Imports Folding
 
-This extension is obsolete.
+Add folding for imports on Php class files. (similar to java,ts,etc.. import folding)
 
-This extension was a workaround for [vscode-java#2133](https://github.com/redhat-developer/vscode-java/issues/2133), which is fixed in [Language Support for Java(TM) by Red Hat v1.12](https://github.com/redhat-developer/vscode-java/releases/tag/v1.12.0).
+## Notes
 
----
-# Original README
-
-Add folding for imports on Java class files.
-
-## Features
-
-Adds a folding region for imports on Java \*.class files.
-
-This is a workaround for [vscode-java#2133 "import regions not computed for .class files"](https://github.com/redhat-developer/vscode-java/issues/2133)
-
-## Extension Settings
-
-None.
-
+- make sure `editor.foldingStrategy` is set to `"auto"`
+- auto fold is handled by `editor.foldingImportsByDefault` [read more](https://stackoverflow.com/a/68503900/3574919)

@@ -1,4 +1,5 @@
 .vscode/**
+.history/**
 .vscode-test/**
 node_modules/**
 src/**
@@ -9,5 +10,4 @@ src/**
 **/.eslint.js
 **/*.map
 **/*.ts
-package-vsix.sh
 *.gitignored.*
