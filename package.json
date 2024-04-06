@@ -2,7 +2,7 @@
     "name": "php-class-imports-folding",
     "displayName": "Php Class Imports Folding",
     "description": "Add folding for imports on php class files",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "repository": "https://github.com/ctf0/vscode-php-class-imports-folding",
     "publisher": "ctf0",
     "icon": "images/icon.png",
